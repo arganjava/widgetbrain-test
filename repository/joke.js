@@ -5,7 +5,9 @@ const JokeRepository = {
     callInitialFetch: callInitialFetch,
     showFiveData: showFiveData,
     removeAll: removeAll,
-    showTenDdata: showTenDdata
+    showTenDdata: showTenDdata,
+    showFrequentlyWord: showFrequentlyWord
+
 
 }
 
@@ -16,7 +18,7 @@ async function initialFetchData() {
         let result = await axios.get(apiJoke);
         return result;
     } catch (e) {
-        console.log(reason)
+        console.log(e)
     }
     return {};
 }
@@ -30,6 +32,14 @@ function showFiveData() {
     return data;
 }
 
+function showFrequentlyWord() {
+    let data = [];
+    Object.keys(storageMap).forEach(function (key) {
+        var value = storageMap[key].value.joke.split(" ");
+        value.map(word => data.push(word));
+    });
+    return data;
+}
 function showTenDdata() {
     let data = [];
     Object.keys(storageMap).forEach(function (key) {
