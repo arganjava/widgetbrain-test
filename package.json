@@ -1,0 +1,22 @@
+{
+  "name": "widgetbrain-test",
+  "version": "1.0.0",
+  "description": "widgetbrain-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arganjava/widgetbrain-test.git"
+  },
+  "author": "argan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arganjava/widgetbrain-test/issues"
+  },
+  "homepage": "https://github.com/arganjava/widgetbrain-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
