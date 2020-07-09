@@ -16,7 +16,7 @@ router.get('/showFiveData', async function (req, res) {
 router.get('/showFrequentlyWord', async function (req, res) {
     try {
         let result = await JokeRepository.showFrequentlyWord()
-        res.json({status: "success", message: "show five data success", data: result})
+        res.json({status: "success", message: "show all words data success", data: result})
     } catch (e) {
         console.error(e)
         res.status(500).json({status: "error", message: e, data: null})
