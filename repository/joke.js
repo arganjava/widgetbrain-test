@@ -9,14 +9,7 @@ const JokeRepository = {
 
 }
 
-let model = {
-    type: String,
-    value: {id: String, joke: String, categories: []},
-}
-
 let storageMap = {}
-
-let responseData = []
 
 async function initialFetchData() {
     try {
